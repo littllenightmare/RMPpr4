@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pr4.Info"
+             Title="Практическая 4" BackgroundColor="Lavender">
+    <StackLayout Padding="10,10">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Поиграться с содержимым странички" TextColor="DimGray" HorizontalOptions="CenterAndExpand"/>
+            <Switch IsToggled="False" Toggled="ShowItems" x:Name="sw" OnColor="DimGray" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+        <StackLayout IsVisible="False" x:Name="slmain">
+            <Label TextColor="DimGray"
+            Text="В ролях"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Entry TextColor="DimGray" Text="Кулькова Ангелина" IsReadOnly="True" VerticalOptions="Center" 
+HorizontalOptions="Center"/>
+            <Entry TextColor="DimGray" Text="В практической 4 с заданием" IsReadOnly="True" VerticalOptions="Center" 
+HorizontalOptions="Center"/>
+            <Label TextColor="DimGray" Text="Выведите на экран следующую информацию: &#10;
+СТРАНЫ:&#10;
+1. Австрия 2. Болгария 3. Греция 4. Италия &#10;
+5. Норвегия 6. Польша 7. Франция 8. Испания &#10;
+Предоставьте пользователю возможность выбора страны (ввод номера) и выведите ее 
+столицу"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
